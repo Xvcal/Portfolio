@@ -1,11 +1,55 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #121212; /* Deep black/grey */
 }
 
 #middle-title {
+    font-family: 'Cinzel', serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
     text-align: center;
-    font-size: 50px;
-    width: 100%;
-    color: white;
+    
+    /* Creates the League of Legends metallic gold gradient */
+    background: linear-gradient(to bottom, #f0e6d2 0%, #c89b3c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Adds the ambient Hextech glow and a dark drop shadow for depth */
+    filter: drop-shadow(0 0 15px rgba(200, 155, 60, 0.4)) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.8));
 }
+
+/* Styling the main navigation bar */
+.top-nav {
+    background-color: #121212; /* Deep black/grey */
+    display: flex;
+    justify-content: space-between; /* Pushes 'Home' left and links right */
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adds a sleek shadow underneath */
+}
+
+/* Styling all the links inside the nav */
+.top-nav a {
+    color: white;
+    text-decoration: none; /* Removes the default underline */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Spacing out the right-side menu links */
+.nav-links a {
+    margin-left: 30px;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Makes the links turn 'trading green' when hovered over */
+.nav-links a:hover {
+    color: #4CAF50; 
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
